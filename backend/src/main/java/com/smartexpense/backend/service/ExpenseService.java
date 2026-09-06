@@ -7,6 +7,10 @@ import com.smartexpense.backend.entity.User;
 import com.smartexpense.backend.repository.ExpenseRepository;
 import com.smartexpense.backend.repository.UserRepository;
 import org.springframework.stereotype.Service;
+import org.springframework.web.server.ResponseStatusException;
+import org.springframework.http.HttpStatus;
+
+
 
 import java.util.List;
 
@@ -81,8 +85,10 @@ public class ExpenseService {
                         new RuntimeException("Expense not found"));
 
         if (!expense.getUser().getEmail().equals(email)) {
-            throw new RuntimeException(
-                    "You are not allowed to update this expense");
+            throw new ResponseStatusException(
+                    HttpStatus.FORBIDDEN,
+                    "You are not allowed to update this expense"
+            );
         }
 
         expense.setTitle(request.getTitle());
@@ -107,11 +113,16 @@ public class ExpenseService {
 
         Expense expense = expenseRepository.findById(id)
                 .orElseThrow(() ->
-                        new RuntimeException("Expense not found"));
+                        new ResponseStatusException(
+                                HttpStatus.NOT_FOUND,
+                                "Expense not found"
+                        ));
 
         if (!expense.getUser().getEmail().equals(email)) {
-            throw new RuntimeException(
-                    "You are not allowed to delete this expense");
+            throw new ResponseStatusException(
+                    HttpStatus.FORBIDDEN,
+                    "You are not allowed to delete this expense"
+            );
         }
 
         expenseRepository.delete(expense);

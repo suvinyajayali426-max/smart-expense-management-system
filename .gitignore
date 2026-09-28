@@ -1,0 +1,6 @@
+# Backend secrets/config
+backend/src/main/resources/application.properties
+
+# Frontend environment files
+frontend/.env
+frontend/.env.*

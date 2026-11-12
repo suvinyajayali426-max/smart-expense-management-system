@@ -1,127 +1,116 @@
+
 # Smart Expense & Personal Finance Management System
 
-A full-stack web application for managing personal income, expenses, budgets, and financial reports.
+A full-stack web application designed to help users manage their personal finances, track income and expenses, manage monthly budgets, and generate financial reports.
+
+## 🌐 Live Demo
+
+[View Live Application](https://smart-expense-management-system-fro.vercel.app/)
 
 ## 📌 Project Overview
 
-The Smart Expense & Personal Finance Management System helps users manage their personal finances in one place.
+Smart Expense & Personal Finance Management System provides a centralized platform for managing personal financial activities.
 
-Users can:
+Users can monitor their income, track daily expenses, manage budgets, and analyze their financial activities through an interactive dashboard.
 
-- Register and login securely
-- Manage personal expenses
-- Manage income
-- Set and manage monthly budgets
-- View financial summaries
-- Generate financial reports
-- Export reports as CSV files
+The system also includes an Admin Dashboard with user management capabilities.
 
-The system also includes an Admin Dashboard for administrators to manage users and view system-level information.
+## ✨ Key Features
 
----
-
-## 🚀 Features
-
-### User Features
-
-- User Registration
-- User Login
-- JWT Authentication
+### 👤 User Features
+- User Registration and Login
+- JWT-based Authentication
 - Role-Based Authorization
-- Expense Management
-  - Add expense
-  - View expenses
-  - Update expense
-  - Delete expense
-  - Search expenses
-  - Filter expenses by category
-- Income Management
-  - Add income
-  - View income
-  - Update income
-  - Delete income
-  - Search income
-  - Filter income by source
-- Budget Management
-  - Add monthly budget
-  - View budgets
-  - Update budget
-  - Delete budget
+- Add, View, Update and Delete Expenses
+- Search and Filter Expenses
+- Add, View, Update and Delete Income
+- Search and Filter Income
+- Monthly Budget Management
 - Financial Dashboard
-- Financial Reports
+- Financial Reports and Analytics
 - CSV Report Export
-- Responsive UI
+- Responsive User Interface
 
-### Admin Features
-
+### 🛡️ Admin Features
 - Admin Dashboard
-- View total users
-- User Management
-- View users
-- Update users
-- Delete users
-- Role-based access control
-
----
+- View Total Users
+- View and Manage Users
+- Update User Information
+- Delete Users
+- Role-Based Access Control
 
 ## 🛠️ Technologies Used
 
-### Frontend
-
-- React
-- Vite
-- JavaScript
-- Axios
-- React Router
-- CSS
-
-### Backend
-
-- Java
-- Spring Boot
-- Spring Security
-- JWT
-- Spring Data JPA
-- Hibernate
-- Maven
-
-### Database
-
-- PostgreSQL
-
-### Development Tools
-
-- Visual Studio Code
-- IntelliJ IDEA / VS Code
-- Postman
-- Git
-- GitHub
-
----
+| Category | Technologies |
+|---|---|
+| Frontend | React, Vite, JavaScript, React Router, CSS |
+| Backend | Java, Spring Boot, Spring Security |
+| Authentication | JWT |
+| ORM | Spring Data JPA, Hibernate |
+| Database | PostgreSQL |
+| Build Tool | Maven |
+| API Testing | Postman |
+| Version Control | Git, GitHub |
+| Deployment | Vercel, Azure App Service, Neon PostgreSQL |
 
 ## 🏗️ Project Structure
 
 ```text
-SmartExpense
-│
-├── backend
-│   ├── src
-│   │   └── main
-│   │       ├── java
-│   │       └── resources
+SmartExpense/
+├── backend/
+│   ├── src/
 │   ├── pom.xml
 │   └── mvnw.cmd
 │
-├── frontend
-│   ├── src
-│   │   ├── api
-│   │   ├── components
-│   │   ├── pages
-│   │   ├── assets
+├── frontend/
+│   ├── src/
+│   │   ├── api/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── assets/
 │   │   ├── App.jsx
-│   │   ├── App.css
 │   │   └── main.jsx
-│   ├── package.json
-│   └── vite.config.js
+│   └── package.json
 │
 └── README.md
+```
+
+## 🚀 Deployment
+
+- Frontend: Vercel
+- Backend: Azure App Service
+- Database: Neon PostgreSQL
+
+## 📸 Application Screenshots
+
+<!-- Add your actual application screenshots here -->
+
+## 🧪 Testing
+
+The application was tested for:
+
+- User Registration and Login
+- Authentication and Authorization
+- Income and Expense Management
+- Budget Management
+- Financial Reports
+- Admin Access Control
+- User Data Isolation
+- Database Connectivity
+- Input Validation
+
+## 👩‍💻 Developer
+
+**Suvinya Jayali**
+
+Software Engineering Undergraduate  
+NSBM Green University
+
+## 🔗 Project Links
+
+- Live Application: https://smart-expense-management-system-fro.vercel.app/
+- GitHub Repository: https://github.com/suvinyajayali426-max/smart-expense-management-system
+
+---
+
+⭐ If you find this project interesting, feel free to explore the repository!
